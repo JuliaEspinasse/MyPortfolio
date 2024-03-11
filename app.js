@@ -4,25 +4,20 @@ const allItemNav = document.querySelectorAll('.nav-menu-item');
 const line = document.querySelector('.cont-line');
 
 btnMenu.addEventListener('click', () => {
-
     line.classList.toggle('active')
     nav.classList.toggle('menu-visible')
-
 })
 
 if (window.matchMedia('(max-width: 1300px)')) {
-
     allItemNav.forEach(item => {
         item.addEventListener('click', () => {
             nav.classList.toggle('menu-visible')
             line.classList.toggle('active');
         })
     })
-
 }
 
 // Animation écriture
-
 const txtAnim = document.querySelector('.txt-animation');
 
 let typewriter = new Typewriter(txtAnim, {
@@ -56,7 +51,6 @@ typewriter
     .start()
 
 // Animation Contact
-
 const input_fields = document.querySelectorAll('input');
 
 for (let i = 0; i < input_fields.length; i++) {
@@ -70,11 +64,9 @@ for (let i = 0; i < input_fields.length; i++) {
             e.target.parentNode.classList.remove('animation')
         }
     })
-
 }
 
 // Anim GSAP + ScrollMagic
-
 const navbar = document.querySelector('.nav-left');
 const title = document.querySelector('h1');
 const btn = document.querySelectorAll('.btn-home')
@@ -116,7 +108,6 @@ window.addEventListener('load', () => {
 })
 
 // Animation ScrollMagic GSAP presentation
-
 const presentationContainer = document.querySelector('.presentation')
 const titlePres = document.querySelector('.title-pres');
 const presleft = document.querySelector('.pres-left')
@@ -151,7 +142,6 @@ const scene = new ScrollMagic.Scene({
     .addTo(controller)
 
 // Anim portfolio
-
 const portfolioContainer = document.querySelector('.portfolio')
 const titlePortfolio = document.querySelector('.title-port')
 const itemPortfolio = document.querySelectorAll('.vague1')
@@ -179,7 +169,6 @@ const scene2 = new ScrollMagic.Scene({
 
 
 // Vague 2 
-
 const itemPortfolio2 = document.querySelectorAll('.vague2')
 
 const tlPortfolio2 = new TimelineMax();
@@ -200,7 +189,6 @@ const scene3 = new ScrollMagic.Scene({
 
 
 // Vague 3
-
 const itemPortfolio3 = document.querySelectorAll('.vague3')
 
 const tlPortfolio3 = new TimelineMax();
@@ -221,7 +209,6 @@ const scene4 = new ScrollMagic.Scene({
 
 
 // Animation range
-
 const sectionComp = document.querySelector('.section-range');
 const titleComp = document.querySelector('.title-xp');
 const allLabel = document.querySelectorAll('.label-skill')
